@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ms_entropy-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/ms_entropy-{{ version }}.tar.gz
   sha256: 490ef92af254766ec22a995c324a377c4a651c11ed7dbe958a8fda50c00584c1
   patches:
     - 0001-setup.patch
@@ -15,7 +15,7 @@ build:
   skip: true  # [py<37]
   skip: true  # [py<39 and osx]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
