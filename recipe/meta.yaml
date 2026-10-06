@@ -25,7 +25,7 @@ requirements:
     - python
     - setuptools >=61.0
     - cython >=0.26.1
-    - numpy >= 2.5.0
+    - numpy >=2.5.0
     - pip
   run:
     - python
